@@ -59,7 +59,9 @@ nav {
     font-size: 40px;
     transition: font-size 2s;
     :hover {
+        opacity: 1;
         font-size: 100px;
+        transition: opacity 1s;
     }
 
     ul {
