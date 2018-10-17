@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #feffff;
+  background-color: #f7f7f7;
   color: rgba(0, 0, 0, 0.78);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 100%;
@@ -36,12 +36,15 @@ article {
 /* custom styles */
 
 header {
-    text-align: left;
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 50px;
     .header-text {
+      font-size: 100px;
       margin-top: 50px;
       padding:10px;
+      display: block;
+      position: relative;
+     text-align: right;
+      font-family: 'Quicksand', sans-serif;
+      color: solid rgb(227, 220, 167);
   }
     .ribbon {
       background-color: rgb(227, 220, 167);
@@ -91,26 +94,36 @@ nav {
       margin: 1rem;
   }
 }
+.box {
+  background-color: rgb(227, 220, 167);
+  margin-bottom: 70px;
+  .home-img {
+    padding: 10px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    picture {
+        padding: 10px;
+    }
+  }
+}
 
 /* about box */
 .aboutBox {
-  width: 250px;
-  margin-left: 700px;
-  padding-left: 10px;
-  border-left: 3px solid rgb(227, 220, 167);
+  display: inline-block;
+  position: absolute;
+  text-align: right;
+  top: 300px;
+  left: 800px; 
+  margin: 60px;
+  width: 350px;
+  border-right: 3px solid rgb(227, 220, 167);
   border-top: 0.15px solid rgb(56, 56, 58);
 }
 
-.home-img {
-  width: auto;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: center;
-  picture {
-      margin: 10px;
-  }
-}
+
 
 /* footer content */
 footer {
@@ -123,6 +136,8 @@ footer {
       text-align: center;
     } 
 }
+
+
 
 /* people page */
 .people-gallery {
@@ -160,8 +175,13 @@ footer {
   }
 }
 
-h1 {
+.page-title {
+  display: block;
+  position: relative;
+  align-content: center;
   font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  color: solid rgb(227, 220, 167);
 }
 
 /* contact page */
@@ -172,4 +192,76 @@ fieldset {
   font-size: 20px;
   font-family: 'Reenie Beanie', cursive;
   margin: 1.5rem;
+}
+
+/*tablet*/
+
+@media only screen and (min-width: 600px) {
+  .aboutBox {
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 500px; 
+    margin: 60px;
+    padding: 5px;
+    width: 250px;
+    border-right: 3px solid rgb(227, 220, 167);
+    border-top: 0.15px solid rgb(56, 56, 58);
+  }
+  header {
+    .header-text {
+      font-size: 70px;
+      margin-top: 50px;
+      padding:10px;
+      display: block;
+      position: relative;
+     text-align: right;
+      font-family: 'Quicksand', sans-serif;
+      color: solid rgb(227, 220, 167);
+  }
+  }
+  .home-img {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    picture {
+        padding: 10px;
+    }
+  }
+}
+
+
+/* mobile view */
+
+@media only screen and (max-width: 600px) {
+  .aboutBox {
+    display: inline-block;
+    left: 300px;
+    top: 200px;
+    width: 250px;
+    border-right: 3px solid rgb(227, 220, 167);
+    border-top: 0.15px solid rgb(56, 56, 58);
+  }
+  header {
+    .header-text {
+      font-size: 50px;
+      margin-top: 50px;
+      padding:10px;
+      display: block;
+      position: relative;
+     text-align: right;
+      font-family: 'Quicksand', sans-serif;
+      color: solid rgb(227, 220, 167);
+  }
+  }
+  .home-img {
+    width: auto;
+    display: block;
+    list-style: none;
+    picture {
+        margin: 60px;
+    }
+  }
 }
