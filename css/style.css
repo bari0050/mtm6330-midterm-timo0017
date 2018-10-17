@@ -1,0 +1,142 @@
+/* Baseline reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  background-color: #feffff;
+  color: rgba(0, 0, 0, 0.78);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 100%;
+  line-height: 1.64rem;
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(0, 0, 0, 0.89); }
+
+article {
+  padding: 2rem 1rem; }
+
+/* custom styles */
+header {
+  text-align: left;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 50px; }
+  header .header-text {
+    margin-top: 50px;
+    padding: 10px; }
+  header .ribbon {
+    background-color: #e3dca7;
+    width: 100%;
+    height: 50px; }
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 50px; }
+
+nav {
+  position: relative;
+  font-size: 40px;
+  transition: font-size 2s; }
+  nav :hover {
+    font-size: 100px; }
+  nav ul {
+    max-width: 200px;
+    font-family: 'Reenie Beanie', cursive;
+    list-style: none;
+    color: #e2e2e2;
+    flex-grow: 2;
+    transition-duration: 0.65s;
+    transition-timing-function: ease;
+    font-size: 50px; }
+    nav ul a {
+      display: block;
+      color: #e3dca7;
+      text-decoration: none;
+      padding: 1rem;
+      font-size: 40px; }
+    nav ul a:hover {
+      color: #4d4d4d;
+      text-decoration: line-through; }
+  nav ul:hover {
+    opacity: 1;
+    max-width: 15rem;
+    margin: 1rem; }
+
+/* about box */
+.aboutBox {
+  width: 250px;
+  margin-left: 700px;
+  padding-left: 10px;
+  border-left: 3px solid #e3dca7;
+  border-top: 0.15px solid #38383a; }
+
+.home-img {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center; }
+  .home-img picture {
+    margin: 10px; }
+
+/* footer content */
+footer {
+  align-content: center; }
+  footer .ribbon {
+    background-color: #e3dca7;
+    width: 100%;
+    height: 25px;
+    padding: 1rem;
+    text-align: center; }
+
+/* people page */
+.people-gallery {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center; }
+  .people-gallery picture {
+    margin: 10px; }
+
+/* places page */
+.places-gallery {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center; }
+  .places-gallery picture {
+    margin: 10px; }
+
+/* branding page */
+.branding-gallery {
+  width: auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center; }
+  .branding-gallery picture {
+    margin: 10px; }
+
+/* contact page */
+fieldset {
+  border: 2px solid #e3dca7;
+  color: #38383a;
+  font-size: 20px;
+  font-family: 'Reenie Beanie', cursive;
+  margin: 1.5rem; }
