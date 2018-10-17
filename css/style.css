@@ -23,7 +23,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgba(0, 0, 0, 0.89); }
+  color: rgba(0, 0, 0, 0.89);
+  font-family: 'Reenie Beanie', cursive; }
 
 article {
   padding: 2rem 1rem; }
